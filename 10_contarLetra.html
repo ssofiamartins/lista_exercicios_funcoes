@@ -6,11 +6,23 @@
     */
 
     //ENTRADA
+    const palavra = prompt(`Informe uma palavra:`).toLowerCase().trim();
+    const letra = prompt(`Informe uma letra:`).toLowerCase().trim();
 
 
     //PROCESSAMENTO
+    function encontrarLetra(p, l) {
+        let contador = 0;
+        for (let caractere of p) {
+            if (caractere == l) {
+                contador++;
+            }
+        }
 
+        alert(`A palavra ${palavra} tem ${contador} letra(s) ${letra}`);
 
-    //SAÍDA
+    }
+
+    encontrarLetra(palavra, letra);
 
 </script>
