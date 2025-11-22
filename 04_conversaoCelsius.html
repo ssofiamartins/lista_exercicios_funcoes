@@ -6,11 +6,15 @@
     */
 
     //ENTRADA
-
+    const temperatura = Number(prompt(`Informe uma temperatura em Farenheit:`));
 
     //PROCESSAMENTO
+    function conversao(temp) {
+        let celsius = (temp - 32) * 5 / 9
+        alert(`A conversão da temperatura ${temperatura}F para graus Celsius é ${celsius}°C`);
+    }
 
-
+    conversao(temperatura);
     //SAÍDA
 
 </script>

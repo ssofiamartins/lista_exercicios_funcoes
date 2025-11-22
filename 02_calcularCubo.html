@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
+    const numeroInterio = Number(prompt(`Informe um número inteiro:`));
 
     //PROCESSAMENTO
+    function cubo(numero) {
+        let resultado = numero ** 3;
+        alert(`O cubo do número ${numeroInterio} é: ${resultado}.`)
+    }
 
-
-    //SAÍDA
-
+    cubo(numeroInterio);
+    
 </script>
